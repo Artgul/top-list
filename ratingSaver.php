@@ -1,6 +1,6 @@
 <?php
     echo "parsing data\n";
-    /*    $str = file_get_contents('https://pathofninja.ru/rating.php?rating=pl');
+        $str = file_get_contents('https://pathofninja.ru/rating.php?rating=pl');
         $re = '/(?:.*?pl=)(.*?)\".*?\n.*>(\d{4,6})/';
         preg_match_all($re, $str, $matches, PREG_SET_ORDER, 0);
         $nicks = 'date';
@@ -22,7 +22,7 @@
         $fp = fopen(__DIR__ . $filename, "a"); // Открываем файл в режиме дозаписи
         fwrite($fp, $data);
         fclose($fp); //Закрытие файла
-    */
+    
     echo "Commiting to git...\n";
         shell_exec("top-list/command.sh");
     echo "git commit done...\n";
